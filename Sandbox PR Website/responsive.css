@@ -1,0 +1,37 @@
+/* sandbox responsive breakpoint */
+
+/*
+
+xs  >=480px
+sm  >=576px
+md  >=768px
+lg  >=991px
+xl  >=1199px
+2xl >=1499px
+
+*/
+
+@media (max-width:1499px) {}
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {
+    .craft-text h1 {
+        max-width: 600px;
+        color: white;
+        font-size: 38px;
+        margin: auto;
+    }
+
+    .craft-sec {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .craft-text {
+        margin: auto;
+
+    }
+}
