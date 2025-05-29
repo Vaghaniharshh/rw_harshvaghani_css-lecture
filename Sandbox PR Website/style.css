@@ -138,7 +138,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 50px;
   flex-wrap: wrap;
   padding: 40px;
   background-color: #F6F7F9;
@@ -337,24 +337,26 @@ a {
 }
 
 .skill-box {
-  flex: 1 1 22%;
+  /* flex: 1 1 22%; */
+  height: 200px;
+  width: 200px;
   background-color: #fff;
   text-align: center;
   padding: 20px 10px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  line-height: 19px;
+  line-height: 22px;
 }
 
 .skill-box img {
   width: 40px;
   height: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .skill-box h3 {
   color: #343F52;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
   line-height: 15px;
   gap: 20px;
@@ -362,7 +364,7 @@ a {
 
 .skill-box p {
   color: #343F52;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -370,4 +372,42 @@ a {
   padding-top: 120px;
   padding-bottom: 60px;
 
+}
+
+/* Latest Project Section */
+
+.main_container {
+  padding: 160px 12px 120px;
+}
+
+.latestporject {
+  gap: 30px;
+}
+
+.latestproject h2 {
+  font-size: 30px;
+  color: #343F52;
+}
+
+.latestproject p {
+  font-size: 20px;
+  color: #60697B;
+  margin: 20px 0px;
+}
+
+.project_btn a {
+  font-weight: bold;
+  color: #D16B86;
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: 2px solid #D16B86;
+  display: inline-block;
+
+}
+
+.project_btn a:hover {
+  background-color: #D16B86;
+  color: white;
+  transform: translateY(-5px);
+  transition: 0.3s transform;
 }
