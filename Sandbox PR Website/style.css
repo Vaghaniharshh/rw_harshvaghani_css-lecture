@@ -748,6 +748,10 @@ footer {
   color: #D53581;
 }
 
+.social-icons a:nth-child(5) {
+  color: red;
+}
+
 .social-icons a:hover {
   transform: translateY(-5px);
 }
