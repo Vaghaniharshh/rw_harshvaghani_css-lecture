@@ -11,27 +11,112 @@ xl  >=1199px
 
 */
 
-@media (max-width:1499px) {}
+/* Base Responsive Reset */
+* {
+  box-sizing: border-box;
+}
 
-@media (max-width:1199px) {}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-@media (max-width:991px) {
-    .craft-text h1 {
-        max-width: 600px;
-        color: white;
-        font-size: 38px;
-        margin: auto;
-    }
+/* ========== Media Queries ========== */
 
-    .craft-sec {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        text-align: center;
-    }
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .craft-text {
-        margin: auto;
+  .nav-link ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    }
+  .craft-container,
+  .skills-container,
+  .budget-container,
+  .projects,
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .craft-text,
+  .theme-text,
+  .budget-content,
+  .text-content,
+  .contact-form {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .skills-icons {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-content img {
+    max-width: 100%;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-form form {
+    width: 100%;
+  }
+
+  .project_btn {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav-logo img {
+    width: 120px;
+  }
+
+  .craft-text h1,
+  .skills-intro h2,
+  .theme-text h1,
+  .budget-content h1,
+  .projects h2,
+  .contact-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-icons {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    margin: 0 6px;
+  }
+
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
 }
