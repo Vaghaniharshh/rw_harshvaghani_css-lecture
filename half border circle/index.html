@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Half Border Circle</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    /* Outer Circle with red LEFT half */
+    .outer-circle {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 50%;
+      background: conic-gradient(
+        from 180deg,              /* start from left */
+        #ff3c38 0deg 180deg,      /* red left half */
+        transparent 180deg 360deg
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .outer-inner {
+      width: 180px;
+      height: 180px;
+      border: 2px solid black;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Inner Circle with blue RIGHT half */
+    .inner-circle {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      border-radius: 50%;
+      background: conic-gradient(
+        from 0deg,              /* start from bottom */
+        #007bff 0deg 180deg,      /* blue right half */
+        transparent 180deg 360deg
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-inner {
+      width: 80px;
+      height: 80px;
+      border: 2px solid black;
+      background: #fff;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer-circle">
+    <div class="outer-inner">
+      <div class="inner-circle">
+        <div class="inner-inner"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
